@@ -1,0 +1,60 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); /* Creates columns with a minimum width of 18rem */
+  gap: 1.5rem; /* Space between each card */
+  padding: 1rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; /* Ensure the content stacks vertically */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%; 
+  height: 200px;
+  object-fit: cover; 
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+  flex-grow: 1; /* Make the body take up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out content vertically */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
